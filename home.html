@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DAILY 2K</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <p>Welcome, <span id="username"></span></p>
+            <p>Balance: <span id="balance">0</span> Naira</p>
+        </div>
+        <div class="ads">
+            <h2>Watch Ads</h2>
+            <button id="watchAdsButton">Watch Ads</button>
+            <p>Click to earn money!</p>
+        </div>
+        <div class="withdraw">
+            <h2>Withdraw</h2>
+            <button id="withdrawButton">Withdraw</button>
+            <p>Withdraw your earnings</p>
+        </div>
+    </header>
+    <main>
+        <h1>Welcome to DAILY 2K</h1>
+        <h2>Earn while you watch ads</h2>
+        <div id="ad-container"><!-- This is where the ads will be displayed --></div>
+        <div class="transaction-history-box">
+            <h2>Transaction History</h2>
+            <ul id="transaction-history"><!-- Transaction history will be displayed here --></ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 DAILY 2K. All rights reserved.</p>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>

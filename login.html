@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup">
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            <p><a href="reset_password.html">Forgot password?</a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Hardcoded credentials for demonstration purposes
+            var hardcodedUsername = "user";
+            var hardcodedPassword = "password";
+            
+            // Retrieve user input
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            // Check if input matches hardcoded values
+            if (username === hardcodedUsername && password === hardcodedPassword) {
+                // Redirect to home page
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
